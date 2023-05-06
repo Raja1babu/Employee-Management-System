@@ -20,6 +20,15 @@
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
+## Adding Employing or saving
+![Screenshot (766)](https://user-images.githubusercontent.com/115009377/236596193-824be211-e9d8-43a7-84d9-1afc8984a94e.png)
+
+## Listing all the added employee
+![Screenshot (767)](https://user-images.githubusercontent.com/115009377/236596224-b56fb6bb-ca44-4fa5-bb74-55082dff4f93.png)
+
+## Updating the employee
+![Screenshot (768)](https://user-images.githubusercontent.com/115009377/236596275-e2e32cc4-e62c-4997-a667-165b45cf4118.png)
+
 ## 🧐 About <a name = "about"></a>
 - There are two things in this employee management system. First adding the employee and another to see the added employee list. We have created the the front-end by react app and back-end by spring boot.
 
