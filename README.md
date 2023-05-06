@@ -23,7 +23,7 @@
 ## Adding Employing or saving
 ![Screenshot (766)](https://user-images.githubusercontent.com/115009377/236596193-824be211-e9d8-43a7-84d9-1afc8984a94e.png)
 
-## Listing all the added employee
+## Listing all the added employee and can deleted
 ![Screenshot (767)](https://user-images.githubusercontent.com/115009377/236596224-b56fb6bb-ca44-4fa5-bb74-55082dff4f93.png)
 
 ## Updating the employee
