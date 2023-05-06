@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState} from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import EmployeeService from "../services/EmployeeService";
    
 const UpdateEmployee = () => {
-
-    const { id } = useParams;
+    const { id } = useParams();
+    const navigate =useNavigate();
     const [employee, setEmployee] = useState({
-        id: id,
+      id: id,
       firstName:"",
       lastName:"",
       email:"",
@@ -32,6 +32,13 @@ const UpdateEmployee = () => {
 
   const updateEmployee = (e) => {
     e.preventDefault();
+    EmployeeService.updateEmployee(employee, id)
+    .then((response) => {
+      navigate("/employeeList");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   };
 
 
@@ -79,9 +86,9 @@ const UpdateEmployee = () => {
           <button onClick={updateEmployee}
             className="rounded text-white font-semibold bg-green-400 py-2 px-6 hover:bg-green-700">
             Update
-          </button>
-
+          </button>        
           <button
+          onClick={() => navigate("/employeeList")}
             className="rounded text-white font-semibold bg-red-400 py-2 px-6 hover:bg-red-700">
             Cancel
           </button>
